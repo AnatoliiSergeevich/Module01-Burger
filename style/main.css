@@ -171,9 +171,8 @@ header{
 
 .banner-box{
    background-image: url(../imeges/banner.jpg);
-   
+   background-size: cover;
    padding: 100px 727px 100px 100px;
-
 }
 
 .baner-title{
