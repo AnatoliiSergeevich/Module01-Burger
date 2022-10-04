@@ -159,27 +159,30 @@ header{
 }
 
 
+
 /*  */
+
+
+
+
+
+
+
 
 .banner-box{
    background-image: url(../imeges/banner.jpg);
-   background-position: center center;
-   background-repeat: no-repeat;
-   width: 1180px;
-   height: 438px;
    
+   padding: 100px 727px 100px 100px;
+
 }
 
 .baner-title{
    font-weight: 900;
    font-size: 60px;
    color: #fff;
-   padding-top: 100px;
-   padding-left: 100px;
-   line-height: 75px;
    margin: 0;
-  
    
+   line-height: 28px;
 }
 
 .baner-title span{
@@ -191,19 +194,14 @@ header{
    background: #F37335;
    
    text-transform: uppercase;
-
-   display: flex;
-   justify-content:center;
-   align-items: center;
    
-   width: 58px;
-   height: 18px;
-   padding: 5px 18px;
-   margin-bottom: 5px;
    border-radius: 14px;
 
+   max-width: 95px;
+   max-height: 28px;
+   display: block;
+   text-align: center;
    
-
 }
 
 
@@ -214,10 +212,10 @@ header{
    font-size: 15px;
    color: #FAF9F9;
 
-   padding-left: 100px;
-   display: flex;
+
+   display: block;
    
-   margin-top: 10px;
+   margin-top: 34px;
    line-height: 24px;
 }
 
@@ -231,15 +229,11 @@ header{
    border-radius: 5px;
 
    background: #FBB731;
-
-   padding: 20px 25px;
-   margin-left: 100px;
+   display: block;
    
-
-   text-align: center;
-
-   display: inline-block;
    max-width: 170px;
    max-height: 58px;
-
+   padding: 21px 0;
+   text-align: center;
+   align-content: ;
 }
