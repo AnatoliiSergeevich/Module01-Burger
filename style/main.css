@@ -661,10 +661,11 @@ header{
    
 
 
+
    /* Дополнительно */
 
    .menu-grid:last-child{
-      grid-template-columns: 281px 281px 281px;
+      grid-template-columns: 275px 275px 275px;
       
       
    }
@@ -672,11 +673,6 @@ header{
    .menu-grid:last-child .menu-grid-cover {
       height: 320px;
    }
-
-   
-   
-   
-
 
 /* Footer Дз */
 
