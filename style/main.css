@@ -666,12 +666,13 @@ header{
 
    .menu-grid:last-child{
       grid-template-columns: 275px 275px 275px;
-      
+      overflow: hidden;
       
    }
 
    .menu-grid:last-child .menu-grid-cover {
       height: 320px;
+      
    }
 
    /* Footer Дз */
