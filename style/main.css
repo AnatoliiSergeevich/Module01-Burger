@@ -645,7 +645,7 @@ header{
       gap: 22px;
    }
    .header-item {
-      flex-basis: 75.5%;
+      flex-basis: 80.5%;
    }
    .bg{
       margin-bottom: 72px;
@@ -666,7 +666,7 @@ header{
 
    .menu-grid:last-child{
       grid-template-columns: 275px 275px 275px;
-      overflow: hidden;
+      overflow-x: scroll;
       
    }
 
