@@ -665,8 +665,9 @@ header{
    /* Дополнительно */
 
    .menu-grid:last-child{
-      grid-template-columns: 275px 275px 275px;
+      grid-template-columns: repeat(3, 275px);
       overflow-x: scroll;
+      padding-bottom: 140px;
       
    }
 
@@ -680,7 +681,7 @@ header{
    .footer {
       padding: 63px 0px;
       padding-bottom: 97px;
-      margin-top: 137px;
+      margin-top: -120px;
       
    }
    .footer-box{
