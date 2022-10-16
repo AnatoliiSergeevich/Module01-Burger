@@ -726,9 +726,9 @@ body{
 
    .menu-other{
       overflow-y: hidden;
-      height: 558px;
+      height: 672px;
    }
-   .menu-other,
+   .menu-other
    .menu-grid {
       display: flex;
       width: auto;
@@ -736,7 +736,7 @@ body{
       overflow-y: hidden;
       padding-bottom: 50px;
    }
-   .menu-other,
+   .menu-other
    .menu-grid-item{
       flex: 0 0 281px;
    }
@@ -843,11 +843,11 @@ body{
       overflow-y: hidden;
       height: 353px;
    }
-   .menu-other, 
+   .menu-other 
    .menu-grid-cover img {
    height: 185px;
    }
-   .menu-other,
+   .menu-other
    .menu-grid-item {
    flex: 0 0 135px;
    }
@@ -968,7 +968,7 @@ body{
       right: 77px;
       bottom: -96px;
    }
-   .content-link, 
+   .content-link 
    .promo a {
       margin-bottom: 49px;
      
@@ -995,19 +995,19 @@ body{
    .promo-left {
       padding: 40px 18px;
   }
-  .cost {
-   font-size: 55px;
-  }
-  .sale {
+   .cost {
+      font-size: 55px;
+    }
+   .sale {
       margin-bottom: 12px;
-  }
-  .promo-right {
+   }
+    .promo-right {
       padding: 38px 18px;
    }
    .free {
       font-size: 39px;
    }
-   .content-link,
+   .content-link
    .promo a {
       margin-bottom: 24px;
    }
