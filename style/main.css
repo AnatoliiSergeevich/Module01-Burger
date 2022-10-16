@@ -1,5 +1,6 @@
 body{
-   font-family: 'Nunito Sans', sans-serif;}
+   font-family: 'Nunito Sans', sans-serif;
+}
    /* font-family: 'Open Sans', sans-serif; */
 
 
@@ -10,9 +11,6 @@ body{
    padding-right: 15px;
 }
 
-header{
-   border-bottom: 1px solif #DEDEDE;
-}
 
 .header {
    font-family: 'Open Sans', sans-serif;
@@ -267,7 +265,9 @@ header{
    border-radius: 22px;
    color: #443737;
    font-size: 15px;
-   appearance: none;
+   -webkit-appearance: none;
+      -moz-appearance: none;
+           appearance: none;
    flex-basis: 279px;
    background-image: url(../imeges/arrow.svg);
    background-size: 12.79px 7.75px;
@@ -298,7 +298,8 @@ header{
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   object-fit: cover;
+   -o-object-fit: cover;
+      object-fit: cover;
    width: 100%;
    height: 430px;
    
@@ -680,7 +681,12 @@ header{
 
 
 /* Responsive */
-
+@media (max-width: 1150px) {
+   .main img {
+      height: 710px;
+      right: -138px;
+   }
+}
 @media (min-width: 766px) {
    .header-burger{
       display: none;
@@ -716,88 +722,82 @@ header{
       
    }
    
-
-
-
-   /* Дополнительно */
+      /* Дополнительно */
 
    .menu-other{
       overflow-y: hidden;
       height: 558px;
    }
-
-   .menu-other .menu-grid {
+   .menu-other,
+   .menu-grid {
       display: flex;
       width: auto;
       overflow-x: scroll;
       overflow-y: hidden;
       padding-bottom: 50px;
-      
    }
-   .menu-other .menu-grid-item{
+   .menu-other,
+   .menu-grid-item{
       flex: 0 0 281px;
    }
-   .menu-other .menu-grid-cover,
    .menu-other .menu-grid-cover img{
       height: 320px;
    }
-
-
-   /* Footer Дз */
-
+      /* Footer Дз */
    .footer {
       padding: 63px 0px;
       padding-bottom: 97px;
       margin-top: 140px;
-      
    }
    .footer-box{
       grid-template-columns: 20% 1fr 1fr;
       display: grid;
-      
    }
-
    .footer-tel{
       grid-row: 2/3;
       grid-column: 2/3;
-      
    }
-   
-
 }
-
 @media(max-width: 765px) {
    nav {
       display: none;
    }
    .header{
       gap: 21px;
-      
    }
 }
-
 @media(max-width: 567px){
    .breadcrumbs a {
       font-size: 14px;
-      
    }
    .title {
-      
       font-size: 38px;
       margin-top: 17px;
       margin-bottom: 20px;
    }
    .description {
       font-size: 12px;
-}
+   }
    .bg{
       padding: 55px 0;
       margin-bottom: 33px;
    }
+   .baner-title {
+      
+      font-size: 50px;
+   }
    .banner-box {
       background-position: 0 center;
-      padding: 35px 24px 54px;
+      padding: 25px 24px 24px;
       margin-bottom: 35px;
+   }
+   .banner-text {
+      font-size: 12px;
+   }
+   .banner-link {
+      font-size: 12px;
+      padding: 15px 0;
+      max-width: 145px;
    }
    .menu-other .menu-grid {
       display: flex;
@@ -808,9 +808,7 @@ header{
       padding-bottom: 50px;
    }
    .menu-title {
-      
       font-size: 27px;
-      
    }
    .menu-grid-cover{
       height: 180px;
@@ -834,7 +832,6 @@ header{
    .menu-grid-btn {
       padding: 10px 22px;
    }
-
    .menu-select {
       padding: 12px 14px;
       font-size: 12px;
@@ -846,18 +843,15 @@ header{
       overflow-y: hidden;
       height: 353px;
    }
-   .menu-other .menu-grid-cover, 
-   .menu-other .menu-grid-cover img {
+   .menu-other, 
+   .menu-grid-cover img {
    height: 185px;
    }
-   
-   .menu-other .menu-grid-item {
+   .menu-other,
+   .menu-grid-item {
    flex: 0 0 135px;
    }
-
-
-   /* footer */
-
+      /* footer */
    .footer{
       margin-top: 60px;
       
@@ -867,9 +861,8 @@ header{
    .footer-box{
       display: grid;
       grid-template-columns: 20% 1fr;
-      flex-direction:column
+      flex-direction: column;
    }
-
    .footer-item:nth-child(2) {
       grid-column: 1 / 3;
       margin-bottom: 10px;
@@ -877,30 +870,17 @@ header{
    }
    .footer-item:nth-child(3) {
       grid-column: 1 / 3;
-      
    }
-
-
-
-
-
-
-
    .footer-item:first-child{
       margin-bottom: 44px;
    }
    .footer-item h2 {
       font-size: 18px;
    }
-   
    .footer-tel{
       grid-row: 1/2;
       grid-column: 3;
-      
-
    }
-
-
 }
 
 @media(max-width: 360px){
@@ -908,12 +888,127 @@ header{
       width: 116px;
       height: 37px;
       background-size: contain;
-
    }
 }
 @media(max-width: 320px){
    .header-logo{
       background-position: 25% center;
+   }
+}
 
+/* index.html */
+@media (max-width: 766px) {
+   .content {
+      color: #FAF9F9;
+      flex: 0 0 527px;
+      padding-top: 42px;
+      padding-bottom: 122px;
+   }
+   .content-title {
+      font-size: 86px;
+      line-height: 100px;
+      margin-bottom: 20px;
+   }
+   .content-title span {
+      font-size: 22px;
+      line-height: 0px;
+      margin-bottom: 27px;
+   }
+   .content-text {
+      font-size: 14px;
+      margin-bottom: 35px;
+   }
+   .content-link, .promo a {
+      padding: 17px 40px;
+      font-size: 13px;
+   }
+   .main img {
+      height: 527px;
+      right: 77px;
+      bottom: -96px;
+   }
+   .promo {
+      padding-top: 105px;
+      padding-bottom: 0px;
+   }
+   .promo-left {
+      padding: 46px 22px;
+   }
+   .promo-right {
+      padding: 64px 33px;
+   }
+   .promo-right .promo-discription {
+      margin-bottom: 14px;
+   }
+}
+@media (max-width: 600px) {
+   .wrapper {
+      gap: 10px;
+   }
+}
+@media(max-width: 567px){
+   .content-title span {
+      font-size: 14px;
+      line-height: 0px;
+      margin-bottom: 27px;
+   }
+   .content-title {
+      font-size: 58px;
+      line-height: 100px;
+      margin-bottom: 20px;
+   }
+   .content-text {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 13px;
+      margin-bottom: 35px;
+   }
+   .main img {
+      height: 527px;
+      right: 77px;
+      bottom: -96px;
+   }
+   .content-link, 
+   .promo a {
+      margin-bottom: 49px;
+     
+   }
+   .visual {
+      position: absolute;
+   }
+   .main img {
+      height: 303px;
+      top: 294px;
+      right: 40px;
+   }
+   .wrapper {
+      display: grid;
+      gap: 22px;
+   }
+   .content-title span {
+      margin-bottom: 20px;
+   }
+   .content-title {
+      font-size: 58px;
+      line-height: 73px;
+   }
+   .promo-left {
+      padding: 40px 18px;
+  }
+  .cost {
+   font-size: 55px;
+  }
+  .sale {
+      margin-bottom: 12px;
+  }
+  .promo-right {
+      padding: 38px 18px;
+   }
+   .free {
+      font-size: 39px;
+   }
+   .content-link,
+   .promo a {
+      margin-bottom: 24px;
    }
 }
